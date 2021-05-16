@@ -13,7 +13,7 @@ var userSchema=new mongoose.Schema({
 });
 var User=mongoose.model("User",userSchema);
 app.get("/",function(req,res){
-  res.render("home");
+  res.render("index");
 });
 app.get("/login",function(req,res){
   res.render("login");
